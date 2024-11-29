@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <title>Menu</title>
+  <style>
+    h2{
+        font-weight: bold;
+        align-items: center;
+    }
+    body {
+        background-color: rgb(246, 243, 243);
+        font-family: Arial, sans-serif;
+        padding:50px;
+        margin-bottom: auto;
+    }
+    .container {
+        max-width: 2000px;
+        margin: 0 auto;
+        padding: 30px;
+       
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    @media (min-width: 768px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .card {
+        background-color: lightgrey;
+        padding: 16px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+    .card img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        margin-right: 16px;
+    }
+    .card h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    .card p {
+        color: #666;
+        margin: 4px 0;
+    }
+    .card .price {
+        font-weight: bold;
+        margin-top: 8px;
+        color:black;
+    }
+ 
+    .add-button{
+    margin-top: auto;
+    align-self: flex-end; 
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<h2> OUR MENU</h2>
+  <div class="container">
+    <div id="menu" class="grid">
+
+    </div>
+
+  </div>
+
+<script src="menu.js"></script>
+</body>
+</html>
