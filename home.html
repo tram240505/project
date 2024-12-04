@@ -24,7 +24,7 @@
             <span class="flavour-title">THE FLAVOUR VAULT</span>
             </h2>
             <p>New Flavours</p>
-            <button class="book-table">Order Now</button>
+            <button id="button" class="book-table">Order Now</button>
         </div>
         
         <div class="about-text">
@@ -33,7 +33,14 @@
             <p>Whether you’re here for a romantic dinner, a family outing, or a casual lunch, we have something special for every occasion.</p>
           </div>
           
-      
+          <script>
+            function handleButton(){
+            window.location.href="menu.html";
+            }
+            document.getElementById("button").addEventListener("click",handleButton);
+        
+        </script>
+        
   
      
     </header>

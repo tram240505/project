@@ -156,3 +156,9 @@ function addButton(event){
 document.querySelectorAll('.add-button').forEach(function(button){
     button.addEventListener("click",addButton);
 })
+
+function handleButton(){
+window.location.href="order.html";
+}
+document.getElementById("button").addEventListener("click",handleButton);
+
