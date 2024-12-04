@@ -121,7 +121,7 @@ storedData.forEach(item => {
     menuItem.innerHTML=`
     <img src="${item.image}" >
     <div>
-    <h3>${item.name}</h3>
+    <h3 class="name-item">${item.name}</h3>
     <p>${item.description}</p>
     <p class="card price">${item.price}</p>
     </div>
@@ -135,9 +135,23 @@ storedData.forEach(item => {
 // function for button when users click on it and it will show an announcement for them that they are successful adding them in order card
 function addButton(event){
     const button=event.target;
-    alert("Add successfully !!!");
+    const card = button.closest('.card'); 
 
-}
+    // retrieve name and price 
+    const name = card.querySelector('.name-item').textContent; 
+    const price = card.querySelector('.price').textContent; 
+    // retrieve array order from local storage
+    let order = JSON.parse(localStorage.getItem('order')) || [];
+    // add to order cart
+    order.push({ name, price });
+  
+    //update again data to local storage
+    localStorage.setItem('order', JSON.stringify(order));
+  
+    // show message for users that successfully
+    alert(`${name} added successfully!`);
+  }
+
 // select all button and apply loop for each button when users click it 
 document.querySelectorAll('.add-button').forEach(function(button){
     button.addEventListener("click",addButton);
