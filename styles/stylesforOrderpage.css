@@ -1,0 +1,191 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  position: relative; /* Ensure no fixed or absolute positioning for the whole page */
+}
+
+.hero-section {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('/projectOrder/img/menu.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 100px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 50px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+.welcome-title h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5em;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.restaurant-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+}
+
+.flavour-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  font-weight: 800;
+  color: #fff;
+}
+
+.hero-content p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #d3d3d3;
+  margin: 10px 0 30px;
+}
+
+.book-table {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.book-table:hover {
+  background-color: #e6c200;
+}
+
+.content-section {
+  padding: 50px 20px;
+  background-color: #111;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+.about-text {
+  width: 50%; /* Adjust the width to control how wide the text section is */
+  margin-top: 200px; /* Center the content horizontally */
+  padding: 20px; /* Add some space around the text */
+  text-align: center; /* Center the text */
+  font-family: 'Libre Baskerville', serif;
+}
+
+.about p {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.2em;
+  color: #d3d3d3;
+  margin: 10px 0;
+}
+
+/* .menu-table {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.menu-table h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
+.menu-items {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+} */
+
+/* .menu-items th, .menu-items td {
+  border: 1px solid #ffd700;
+  padding: 10px;
+  color: #fff;
+} */
+
+/* .menu-items th {
+  background-color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+} */
+/* 
+.menu-items tr:nth-child(even) {
+  background-color: #222;
+} */
+
+/* section {
+  margin: 50px 0;
+} */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8em;
+  }
+
+  /* .book-table {
+    font-size: 1em;
+    padding: 10px 20px;
+  } */
+}
