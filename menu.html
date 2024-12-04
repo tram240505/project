@@ -8,11 +8,12 @@
   <title>Menu</title>
   <style>
     h2{
+        color:aliceblue;
         font-weight: bold;
-        align-items: center;
+        text-align:center;
     }
     body {
-        background-color: rgb(246, 243, 243);
+        background-color: black;
         font-family: Arial, sans-serif;
         padding:50px;
         margin-bottom: auto;
@@ -34,13 +35,14 @@
         }
     }
     .card {
-        background-color: lightgrey;
+        background-color:white;
         padding: 16px;
         border-radius: 8px;
         display: flex;
         align-items: center;
         flex-direction: row; 
         justify-content: space-between; 
+        /* text-align: center; */
     }
     .card img {
         width: 64px;
@@ -66,14 +68,17 @@
     .add-button{
     margin-top: auto;
     align-self: flex-end; 
-    background-color: white;
+    background-color: #7e57c2;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    color:white;
     }
 
     .custom-button {
+    display:block;
+    margin:20px auto 0;
     background-color: #7e57c2; 
     color: white; 
     border: none; 
@@ -83,6 +88,7 @@
     font-weight: 600; 
     font-family: 'Arial', sans-serif; 
     cursor: pointer; 
+    text-align: center;
 }
 
 .custom-button:hover {
