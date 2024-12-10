@@ -1,47 +1,82 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Theme</title>
-    <link rel="stylesheet" href="styles/stylesforOrderpage.css">
-    </head>
-    <body >
+    <link rel="stylesheet" href="/styles/restaurant.css">
+</head>
+<body>
     <header class="hero-section">
         <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="#">Feedback</a></li>
-        
-        </ul>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
         </nav>
         <div class="hero-content">
-            <div class="welcome-title"><h1>Welcome</h1></div>
+            <div class="welcome-title">
+                <h1>Welcome</h1>
+            </div>
             <h2>
-            <span class="restaurant-title">RESTAURANT</span><br>
-            <span class="flavour-title">THE FLAVOUR VAULT</span>
+                <span class="restaurant-title">RESTAURANT</span><br>
+                <span class="flavour-title">THE FLAVOUR VAULT</span>
             </h2>
             <p>New Flavours</p>
-           <button id="button" class="order">Order Now</button>
+            <a href="menu.html"><button id="button" class="book-table">Order Now</button></a>
         </div>
-        
+
         <div class="about-text">
             <h2>About Our Restaurant</h2>
             <p>At The Flavour Vault, we believe in offering a unique dining experience with flavors that linger on your palate. Our chefs curate dishes inspired by global cuisine and infused with local ingredients.</p>
             <p>Whether you’re here for a romantic dinner, a family outing, or a casual lunch, we have something special for every occasion.</p>
-          </div>
-          
-          <script>
+        </div>
+    </header>
+    <section class="menu-table">
+        <h2>Our Menu</h2>
+        <table class="menu-items">
+          <thead>
+            <tr>
+              <th>Dish</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Grilled Salmon</td>
+              <td>Freshly grilled salmon served with a tangy lemon butter sauce.</td>
+              <td>$25.99</td>
+            </tr>
+            <tr>
+              <td>Spaghetti Carbonara</td>
+              <td>Classic Italian pasta with creamy sauce and crispy pancetta.</td>
+              <td>$18.99</td>
+            </tr>
+            <tr>
+              <td>Garden Salad</td>
+              <td>A mix of fresh greens, cherry tomatoes, cucumbers, and house dressing.</td>
+              <td>$12.99</td>
+            </tr>
+            <tr>
+              <td>Chocolate Lava Cake</td>
+              <td>Decadent chocolate cake with a gooey molten center.</td>
+              <td>$8.99</td>
+            </tr>
+          </tbody>
+    </header>
+    </body>
+    </html>
+    <script>
             function handleButton(){
-            window.location.href="menu.html";
+            window.location.href="order.html";
             }
             document.getElementById("button").addEventListener("click",handleButton);
         
         </script>
+</body>
+</html>
+   
         
   
-     
-    </header>
-    </body>
-    </html>
